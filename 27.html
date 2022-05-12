@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="14.estilo.css">
+        <title>
+            Exemplo Clear CSS
+        </title>
+    </head>
+    <body>
+        <h2>Sem clear</h2>
+        <div class="div1">div1</div>
+        <div class="div2">div2 - Note que div2 está depois do div1 no código HTML. Entretanto,uma vez que div1 floats está configurado como left, o texto div2 ficara em volta do div1.</div>
+        <br/><br/>
+        <h2>Com clear</h2>
+        <div class="div3">div3</div>
+        <div class="div4">div4 - aqui clear: left; move div4 para baixo do div 3, que está com o float confugurado com left.
+            isso acontace, porque a propriadade clear: left deabilita o float á esquerda.
+        </div>
+    </body>
+</html>

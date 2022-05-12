@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>forms HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>exemplo de formulario do HTML</h1>
+    </header>
+    <article>
+        <form method="post" id="fContato" action="malito:email@email.com.br"
+        oninput="result.value=parsenInt(valor_01.value)+parseInt(valor_02.value)">
+            <fieldset>
+                <legend>identificação:</legend>
+                <label for="cNome">Nome:</label><br />
+                <input type="text" size="50" name="tNome" id="cNome" required="required" /><br/><br/>
+
+                <p>voce mora:</p>
+                <input type="radio" name="tipo" id="cid" value="C" />
+                <label for="cid">cidade</label><br/>
+                <input type="radio" name="tipo" id="inter" value="I" />
+                <label for="inter">interior</label><br/>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>informaçoes extras</legend>
+                <p>qual meio de transporte vc usa?</p>
+                <input type="checkbox" id="transporte1" name="transporte1" value="bike" />
+                <label for="trnasporte1">Bicicleta</label><br/>
+                <input type="checkbox" id="transporte2" name="transporte2"
+                value="car" />
+                <label for="transporte2"> carro</label><br/>
+                <input type="checkbox" id="transporte3" name="transporte3"
+                volue="metro"/>
+                <label for="transporte3">metro</label><br/>
+                <input type="checkbox" id="transporte4" name="transporte4"
+                value="bus" />
+                <label for="transporte4">onibus</label><br/><br/>
+                <label for="time">selecione seu time:</label>
+                <select id="time" name="time">
+                    <option value="cruzeiro">cruzeiro</option>
+                    <option value="sao_paulo">sao paulo</option>
+                    <option value="corinthians">corinthians</option>
+                    <option value="gremio">gremio</option>
+                    <option value="goias">goias</option>
+                    <option value="santos">santos</option>
+                </select><br/><br/>
+                <label for="cCid">escolha a sua cidade na lista:</label>
+                <input list="cidade" name="tCid" placeholder="sua cidade"/>
+                <datalist id="cidade">
+                    <option value="sao paulo"></option>
+                    <option value="campinas"></option>
+                    <option value="santos"></option>
+                    <option value="santo andre"></option>
+                </datalist>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>exemplo range e output:</legend>
+                0
+                <input type="range" id="valor_01" name="valor_01" />
+                100 +
+                <input type="number" id="valor_02" name="valor_02" value="50" />
+                =
+                <output name="result" for="valor_01 valor_02"></output>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>sua opinião:</legend>
+                <p>sugestoes, elogios e criticas:</p>
+                <textarea name="message" rows="10" cols="30" placeholder="Deixe aqui a sua mensagem!"></textarea>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="enviar" />
+    </form>
+    </article>
+    <footer>
+        <small>instituto de oportunidade social</small>
+    </footer>
+</body>
+</html>

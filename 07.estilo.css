@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {
+    background-color: #49274A;
+    color: #f8eee7;
+}
+
+table * {
+    background-color: #94618E;
+    text-align: center;
+    width: 400px;
+}
+
+p {
+    background-color: #F4DECB;
+    color: black;
+}
